@@ -6,6 +6,7 @@ def mostrar_formulario(request):
         post = Post()
         post.titulo = request.POST.get('titulo')
         post.conteudo = request.POST.get('conteudo')
+        post.autor = request.POST.get('nome')
 
         post.save()
 

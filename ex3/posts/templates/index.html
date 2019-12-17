@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +18,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ post.titulo }}</h5>
                 <p class="card-text">{{ post.conteudo }}</p>
+                <p class="card-nome">{{ post.autor}}</p>
             </div>
         </div>
         {% endfor %}
